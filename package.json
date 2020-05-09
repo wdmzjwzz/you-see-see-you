@@ -1,0 +1,19 @@
+{
+  "name": "youseeseeyou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdmzjwzz/you-see-see-you.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wdmzjwzz/you-see-see-you/issues"
+  },
+  "homepage": "https://github.com/wdmzjwzz/you-see-see-you#readme"
+}
