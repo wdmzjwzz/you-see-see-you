@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development nodemon app.js ",
-    "api:docs": "jsdoc ./models/Books.js -d ./docs/jsdoc"
+    "api:docs": "jsdoc ./**/*.js -d ./docs/jsdoc"
   },
   "author": "",
   "license": "ISC",
