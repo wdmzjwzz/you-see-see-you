@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=development nodemon app.js ",
+    "server:dev": "cross-env NODE_ENV=development nodemon app.js ",
     "api:docs": "jsdoc ./**/*.js -d ./docs/jsdoc"
   },
   "author": "",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "jsdoc": "^3.6.4",
+    "log4js": "^6.2.1",
     "nodemon": "^2.0.3"
   }
 }
