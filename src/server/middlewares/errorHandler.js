@@ -19,4 +19,4 @@ const handler = {
         })
     }
 }
-module.exports = handler
+export default handler

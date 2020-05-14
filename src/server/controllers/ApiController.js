@@ -1,4 +1,4 @@
-const Books = require('@models/Books')
+import Books from '@models/Books'
 const books = new Books()
 class ApiController {
     constructor() {
@@ -11,4 +11,4 @@ class ApiController {
         }
     }
 }
-module.exports = ApiController
+export default ApiController

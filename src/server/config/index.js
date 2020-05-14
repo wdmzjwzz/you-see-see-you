@@ -1,5 +1,5 @@
-const { extend } = require('lodash')
-const { join } = require("path")
+import { extend } from 'lodash'
+import { join } from "path"
 let config = {
     port: 8000,
     viewDir: join(__dirname, "..", 'views'),
@@ -17,4 +17,4 @@ if (process.env.NODE_ENV === 'production') {
     }
     config = extend(config, localConfig)
 }
-module.exports = config
+export default config

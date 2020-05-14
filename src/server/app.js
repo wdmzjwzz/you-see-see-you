@@ -1,29 +1,29 @@
 
-const Koa = require('koa');
+import Koa from 'koa';
 const app = new Koa();
-const serve = require('koa-static');
-const moduleAlias = require('module-alias')
-const render = require('koa-swig');
-const co = require('co');
-const log4js = require('log4js')
-const { historyApiFallback } = require('koa2-connect-history-api-fallback');
-moduleAlias.addAliases({
+import serve from 'koa-static';
+import { addAliases } from 'module-alias';
+import render from 'koa-swig';
+import { wrap } from 'co';
+import { configure, getLogger } from 'log4js';
+import { historyApiFallback } from 'koa2-connect-history-api-fallback';
+addAliases({
     '@': __dirname,
     '@controllers': __dirname + '/controllers',
     '@models': __dirname + '/models'
 })
-const { port, viewDir, staticDir } = require('@/config')
-const errorHandler = require('./middlewares/errorHandler')
+import { port, viewDir, staticDir } from '@/config';
+import { error } from './middlewares/errorHandler';
 
-log4js.configure({
+configure({
     appenders: { app: { type: 'file', filename: './logs/app.log' } },
     categories: { default: { appenders: ['app'], level: 'error' } }
 });
 
-const logger = log4js.getLogger('app');
+const logger = getLogger('app');
 app.use(serve(staticDir));
 app.use(historyApiFallback({ index: "/", whiteList: ['/api'] }));
-app.context.render = co.wrap(render({
+app.context.render = wrap(render({
     root: viewDir,
     autoescape: true,
     cache: process.env.NODE_ENV === 'development' ? false : 'memory', // disable, set to false
@@ -31,7 +31,7 @@ app.context.render = co.wrap(render({
     varControls: ["[[", ']]'],
     writeBody: false
 }));
-errorHandler.error(app,logger)
+error(app,logger)
 require('@/controllers')(app)
 
 // 在端口3000监听:

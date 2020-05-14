@@ -1,12 +1,12 @@
 
-const router = require('koa-simple-router')
-const BookController = require('@controllers/BookController')
-const IndexController = require('@controllers/IndexController')
-const ApiController = require('@controllers/ApiController')
+import router from 'koa-simple-router'
+import BookController from '@controllers/BookController'
+import IndexController from '@controllers/IndexController'
+import ApiController from '@controllers/ApiController'
 const bookController = new BookController()
 const apiController = new ApiController()
 const indexController = new IndexController()
-module.exports = app => {
+export default app => {
     app.use(router(_ => {
         // _.get("/", indexController.actionIndex)
         _.get("/index.html", indexController.actionIndex)

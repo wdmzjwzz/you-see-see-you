@@ -1,4 +1,4 @@
-const Books = require('@models/Books')
+import Books from '@models/Books'
 const books = new Books()
 class BookController {
     constructor() {
@@ -11,4 +11,4 @@ class BookController {
         }
     }
 }
-module.exports = BookController
+export default BookController

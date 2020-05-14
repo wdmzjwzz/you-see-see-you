@@ -33,4 +33,4 @@ class Books {
         ])
     }
 }
-module.exports = Books
+export default Books
