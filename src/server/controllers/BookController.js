@@ -1,4 +1,4 @@
-import Books from '../models/Books'
+import Books from '@models/Books'
 const books = new Books()
 class BookController {
     constructor() {

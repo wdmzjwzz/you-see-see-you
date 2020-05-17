@@ -1,8 +1,8 @@
 
 import router from 'koa-simple-router'
-import BookController from './BookController'
-import IndexController from './IndexController'
-import ApiController from './ApiController'
+import BookController from '@controllers/BookController'
+import IndexController from '@controllers/IndexController'
+import ApiController from '@controllers/ApiController'
 const bookController = new BookController()
 const apiController = new ApiController()
 const indexController = new IndexController()

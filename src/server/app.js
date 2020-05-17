@@ -7,12 +7,12 @@ import render from 'koa-swig';
 import { wrap } from 'co';
 import { configure, getLogger } from 'log4js';
 import { historyApiFallback } from 'koa2-connect-history-api-fallback';
-import router from './controllers/index'
 addAliases({
-    '@': __dirname,
+    '@root': __dirname,
     '@controllers': __dirname + '/controllers',
     '@models': __dirname + '/models'
 })
+
 import  config from './config';
 const { port, viewDir, staticDir } = config
 import { error } from './middlewares/errorHandler';
@@ -34,7 +34,7 @@ app.context.render = wrap(render({
     writeBody: false
 }));
 error(app,logger)
-router(app)
+require('./controllers').default(app);
 
 // 在端口3000监听:
 app.listen(port, () => {
