@@ -1,0 +1,17 @@
+{% extends '@layouts/layout.html' %}
+{% block title %} index {% endblock %}
+{% block head %}
+<!-- injectcss -->
+{% endblock  %}
+{% block content %}
+
+    {% include "@components/banner/banner.html" %}
+        <h1>这是首页</h1>
+        [[data]]
+        <hr/>
+    {% include "@components/list/list.html" %}
+{% endblock %}
+
+{% block scripts %}
+<!-- injectjs -->
+{% endblock  %}
