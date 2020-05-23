@@ -16,7 +16,8 @@ addAliases({
 import  config from './config';
 const { port, viewDir, staticDir } = config
 import { error } from './middlewares/errorHandler';
-
+const setTitle = require('node-bash-title');
+setTitle('🚀 server启动项目');
 configure({
     appenders: { app: { type: 'file', filename: './logs/app.log' } },
     categories: { default: { appenders: ['app'], level: 'error' } }

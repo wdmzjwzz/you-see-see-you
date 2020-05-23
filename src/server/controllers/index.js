@@ -11,6 +11,7 @@ export default app => {
         _.get("/", indexController.actionIndex)
         _.get("/index.html", indexController.actionIndex)
         _.get("/book/list", bookController.actionIndex)
+        _.get("/book/add", bookController.addbooks)
         _.get("/api/list", apiController.actionIndex)
     }))
 }

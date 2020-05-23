@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "co": "^4.6.0",
     "cross-env": "^7.0.2",
     "jquery": "^3.5.1",

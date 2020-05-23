@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock  %}</title>
     {% block head %}{% endblock  %}
+    <link rel="shortcut icon" href="http://bsify.admui.com/dist/images/favicon.png">
 </head>
 
 <body>
+    {% include "../../components/banner/banner.html" %}
+    <div id="app">
+
+        {% block content %}
+        {% endblock  %}
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/quicklink/2.0.0/quicklink.umd.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
-    {% block content %}
-    {% endblock  %}
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.js"></script>
+    <script>
+        $(document).pjax('a', "#app")
+        quicklink.listen();
+    </script>
+
     {% block scripts %}
     {% endblock  %}
 </body>

@@ -343,3 +343,25 @@
   syscall: 'open',
   path:
    '/home/wangzz/Desktop/app/you-see-see-you/web/views/index/pages/index.html' }
+[2020-05-23T13:24:47.794] [ERROR] app - { [Error: ENOENT: no such file or directory, open '/home/wangzz/Desktop/app/you-see-see-you/dist/views/books/pages/books.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/home/wangzz/Desktop/app/you-see-see-you/dist/views/books/pages/books.html' }
+[2020-05-23T13:41:16.274] [ERROR] app - { [Error: ENOENT: no such file or directory, open '/home/wangzz/Desktop/app/you-see-see-you/dist/views/books/pages/books.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/home/wangzz/Desktop/app/you-see-see-you/dist/views/books/pages/books.html' }
+[2020-05-23T13:42:24.769] [ERROR] app - { [Error: ENOENT: no such file or directory, open '/home/wangzz/Desktop/app/you-see-see-you/dist/views/books/pages/books.html']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path:
+   '/home/wangzz/Desktop/app/you-see-see-you/dist/views/books/pages/books.html' }
+[2020-05-23T14:25:07.482] [ERROR] app - ReferenceError: createSSRStreamPromise is not defined
+    at actionIndex (/home/wangzz/Desktop/app/you-see-see-you/dist/controllers/BookController.js:47:5)
+[2020-05-23T14:25:32.190] [ERROR] app - ReferenceError: createSSRStreamPromise is not defined
+    at actionIndex (/home/wangzz/Desktop/app/you-see-see-you/dist/controllers/BookController.js:47:5)
