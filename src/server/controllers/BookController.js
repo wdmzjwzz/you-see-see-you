@@ -17,7 +17,6 @@ class BookController {
             data:result
         })
         if (ctx.request.header['x-pjax']) {
-            console.log('站内刷新')
             const $ = cheerio.load(html)
             ctx.status = 200;
             ctx.type = 'html'
@@ -29,7 +28,6 @@ class BookController {
             });
             ctx.res.end()
         } else {
-            console.log('直接刷新！')
             function createSSRStreamPromise() {
                 return new Promise((reslove,reject)=>{
                     const htmlStream = new Readable();
