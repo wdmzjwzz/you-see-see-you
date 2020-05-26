@@ -5,7 +5,7 @@
  * @property int $id
  * @property string $name
  */
-class Books {
+class BooksService {
     /**
      * @class
      * @param {*} app 执行上下文
@@ -33,4 +33,4 @@ class Books {
         ])
     }
 }
-export default Books
+export default BooksService

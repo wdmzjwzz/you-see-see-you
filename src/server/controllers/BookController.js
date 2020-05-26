@@ -1,14 +1,13 @@
-import Books from '@models/Books'
+
 import {Readable} from 'stream'
 import { create } from 'domain'
 import cheerio from 'cheerio'
-const books = new Books()
 class BookController {
-    constructor() {
-
+    constructor({BooksService}) {
+      this.booksService = BooksService
     }
     async actionIndex(ctx, next) {
-        const result = await books.getData()
+        const result = await this.booksService.getData()
         
         const html = await ctx.render('books/pages/list.html',{
             data:result
@@ -46,12 +45,12 @@ class BookController {
     }
     
     async addbooks(ctx, next) {
-        const result = await books.getData()
+        const result = await this.booksService.getData()
         const html = await ctx.render('books/pages/create.html',{
             data:result
         })
+        //站内刷新
         if (ctx.request.header['x-pjax']) {
-            console.log('站内刷新')
             const $ = cheerio.load(html)
             ctx.status = 200;
             ctx.type = 'html'
@@ -63,7 +62,7 @@ class BookController {
             });
             ctx.res.end()
         } else {
-            console.log('直接刷新！')
+            // 直接刷
             function createSSRStreamPromise() {
                 return new Promise((reslove,reject)=>{
                     const htmlStream = new Readable();

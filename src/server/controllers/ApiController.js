@@ -1,11 +1,10 @@
-import Books from '@models/Books'
-const books = new Books()
-class ApiController {
-    constructor() {
 
+class ApiController {
+    constructor({BooksService}) {
+        this.booksService = BooksService
     }
     async actionIndex(ctx, next) {
-        const result = await books.getData()
+        const result = await this.booksService.getData()
         ctx.body = {
             data: result
         }
