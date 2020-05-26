@@ -14,10 +14,10 @@ import {
     Lifetime,
     createContainer
 } from 'awilix';
-// import {
-//     scopePerRequest,
-//     loadControllers
-// } from 'awilix-koa';
+import {
+    scopePerRequest,
+    loadControllers
+} from 'awilix-koa';
 const { port, viewDir, staticDir } = config
 const setTitle = require('node-bash-title');
 
@@ -45,7 +45,7 @@ configure({
 });
 
 const logger = getLogger('app');
-// app.use(scopePerRequest(container));
+app.use(scopePerRequest(container));
 app.use(serve(staticDir));
 // app.use(historyApiFallback({ index: "/", whiteList: ['/api'] }));
 app.context.render = wrap(render({
@@ -57,7 +57,9 @@ app.context.render = wrap(render({
     writeBody: false
 }));
 error(app, logger)
-require('./controllers').default(app);
+app.use(loadControllers(__dirname + "/controllers/*.js"), {
+    cwd: __dirname
+});
 
 // 在端口3000监听:
 app.listen(port, () => {

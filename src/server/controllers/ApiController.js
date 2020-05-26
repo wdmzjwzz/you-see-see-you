@@ -1,13 +1,14 @@
-
+import { route, GET } from 'awilix-koa';
+@route('/api')
 class ApiController {
-    constructor({BooksService}) {
-        this.booksService = BooksService
+    constructor({ booksService }) {
+        this.booksService = booksService
     }
+    @route('/list')
+    @GET()
     async actionIndex(ctx, next) {
-        const result = await this.booksService.getData()
-        ctx.body = {
-            data: result
-        }
+
+        ctx.body = await this.booksService.getData()
     }
 }
 export default ApiController

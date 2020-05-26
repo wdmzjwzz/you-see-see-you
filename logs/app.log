@@ -365,3 +365,81 @@
     at actionIndex (/home/wangzz/Desktop/app/you-see-see-you/dist/controllers/BookController.js:47:5)
 [2020-05-23T14:25:32.190] [ERROR] app - ReferenceError: createSSRStreamPromise is not defined
     at actionIndex (/home/wangzz/Desktop/app/you-see-see-you/dist/controllers/BookController.js:47:5)
+[2020-05-26T20:08:10.253] [ERROR] app - AwilixResolutionError: Could not resolve 'BooksService'.
+
+Resolution path: BooksService
+    at resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:238:23)
+    at Object.get (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:65:32)
+    at new BookController (/home/wangzz/Desktop/app/you-see-see-you/dist/controllers/BookController.js:24:5)
+    at newClass (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:85:24)
+    at Object.resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:294:20)
+    at Object.build (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:311:37)
+    at memberInvoker (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix-koa/lib/invokers.js:83:38)
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+    at /home/wangzz/Desktop/app/you-see-see-you/node_modules/@koa/router/lib/router.js:368:16
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+[2020-05-26T20:08:15.058] [ERROR] app - AwilixResolutionError: Could not resolve 'BooksService'.
+
+Resolution path: BooksService
+    at resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:238:23)
+    at Object.get (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:65:32)
+    at new BookController (/home/wangzz/Desktop/app/you-see-see-you/dist/controllers/BookController.js:24:5)
+    at newClass (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:85:24)
+    at Object.resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:294:20)
+    at Object.build (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:311:37)
+    at memberInvoker (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix-koa/lib/invokers.js:83:38)
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+    at /home/wangzz/Desktop/app/you-see-see-you/node_modules/@koa/router/lib/router.js:368:16
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+[2020-05-26T20:08:22.651] [ERROR] app - AwilixResolutionError: Could not resolve 'BooksService'.
+
+Resolution path: BooksService
+    at resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:238:23)
+    at Object.get (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:65:32)
+    at new BookController (/home/wangzz/Desktop/app/you-see-see-you/dist/controllers/BookController.js:24:5)
+    at newClass (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:85:24)
+    at Object.resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:294:20)
+    at Object.build (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:311:37)
+    at memberInvoker (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix-koa/lib/invokers.js:83:38)
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+    at /home/wangzz/Desktop/app/you-see-see-you/node_modules/@koa/router/lib/router.js:368:16
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+[2020-05-26T20:09:50.122] [ERROR] app - AwilixResolutionError: Could not resolve 'BooksService'.
+
+Resolution path: BooksService
+    at resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:238:23)
+    at Object.get (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:65:32)
+    at new BookController (/home/wangzz/Desktop/app/you-see-see-you/dist/controllers/BookController.js:24:5)
+    at newClass (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:85:24)
+    at Object.resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:294:20)
+    at Object.build (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:311:37)
+    at memberInvoker (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix-koa/lib/invokers.js:83:38)
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+    at /home/wangzz/Desktop/app/you-see-see-you/node_modules/@koa/router/lib/router.js:368:16
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+[2020-05-26T20:09:51.889] [ERROR] app - AwilixResolutionError: Could not resolve 'BooksService'.
+
+Resolution path: BooksService
+    at resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:238:23)
+    at Object.get (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:65:32)
+    at new BookController (/home/wangzz/Desktop/app/you-see-see-you/dist/controllers/BookController.js:24:5)
+    at newClass (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:85:24)
+    at Object.resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:294:20)
+    at Object.build (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:311:37)
+    at memberInvoker (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix-koa/lib/invokers.js:83:38)
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+    at /home/wangzz/Desktop/app/you-see-see-you/node_modules/@koa/router/lib/router.js:368:16
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+[2020-05-26T20:11:25.537] [ERROR] app - AwilixResolutionError: Could not resolve 'BooksService'.
+
+Resolution path: BooksService
+    at resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:238:23)
+    at Object.get (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:65:32)
+    at new BookController (/home/wangzz/Desktop/app/you-see-see-you/dist/controllers/BookController.js:24:5)
+    at newClass (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:85:24)
+    at Object.resolve (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/resolvers.js:294:20)
+    at Object.build (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix/lib/container.js:311:37)
+    at memberInvoker (/home/wangzz/Desktop/app/you-see-see-you/node_modules/awilix-koa/lib/invokers.js:83:38)
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)
+    at /home/wangzz/Desktop/app/you-see-see-you/node_modules/@koa/router/lib/router.js:368:16
+    at dispatch (/home/wangzz/Desktop/app/you-see-see-you/node_modules/koa-compose/index.js:42:32)

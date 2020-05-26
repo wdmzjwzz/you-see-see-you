@@ -2,10 +2,14 @@
 import {Readable} from 'stream'
 import { create } from 'domain'
 import cheerio from 'cheerio'
+import { route, GET } from 'awilix-koa';
+@route('/book')
 class BookController {
     constructor({BooksService}) {
       this.booksService = BooksService
     }
+    @route('/list')
+    @GET()
     async actionIndex(ctx, next) {
         const result = await this.booksService.getData()
         
@@ -43,7 +47,8 @@ class BookController {
         
         // ctx.body = html
     }
-    
+    @route('/add')
+    @GET()
     async addbooks(ctx, next) {
         const result = await this.booksService.getData()
         const html = await ctx.render('books/pages/create.html',{
